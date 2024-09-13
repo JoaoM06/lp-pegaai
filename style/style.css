@@ -90,3 +90,37 @@ main button{
 main img{
     width: 40vw;
 }
+
+.secondSec{
+    background-color: #D4EDFF;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.secondSec .secondSecItem{
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.secondSec .secondSecNumb{
+    display: flex;
+    align-items: center;
+}
+
+.secondSec .secondSecNumb h1{
+    font-family: "Roboto", sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.secondSec .secondSecNumb img{
+    width: 70px;
+    margin-right: 10px;
+}
+
+.secondSec .secondSecImg img{
+    width: 250px;
+}
