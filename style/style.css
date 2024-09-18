@@ -8,6 +8,31 @@ body{
     overflow-x: hidden;
 }
 
+h1{
+    font-family: "Oswald", sans-serif;
+    font-size: 3rem;
+    margin: 10px 0px;
+    color: black;
+}
+
+h2{
+    font-size: 3rem;
+    font-family: "Noto Sans", sans-serif;
+}
+
+button{
+    padding: 0.6em 1.2em;
+    border: none;
+    background-color: #5FACF1;
+    color: white;
+    border-radius: 5px;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    box-shadow: rgb(147, 147, 147) 2px 2px 12px;
+    cursor: pointer;
+}
+
 header{
     display: flex;
     width: 100vw;
@@ -31,15 +56,15 @@ header a{
 }
 
 header button{
-    padding: 10px 20px;
     border: none;
     box-shadow: rgb(113, 113, 113) 2px 2px 10px;
     border-radius: 5px;
     font-family: "Roboto", sans-serif;
-    font-size: 20px;
+    font-size: 1.3rem;
     font-weight: 500;
     cursor: pointer;
     background-color: transparent;
+    color: black;
 }
 
 main{
@@ -59,13 +84,6 @@ main aside{
     margin-right: 8vw;
 }
 
-main h1{
-    font-family: "Oswald", sans-serif;
-    font-size: 50px;
-    margin: 10px 0px;
-    color: black;
-}
-
 main p{
     font-family: "Roboto", sans-serif;
     font-weight: 500;
@@ -74,25 +92,17 @@ main p{
     margin: 20px 0px;
 }
 
-main button{
-    padding: 10px 20px;
-    border: none;
-    background-color: #5FACF1;
-    color: white;
-    border-radius: 5px;
-    font-family: "Roboto", sans-serif;
-    font-size: 20px;
-    font-weight: 500;
-    box-shadow: rgb(147, 147, 147) 2px 2px 12px;
-    cursor: pointer;
-}
-
 main img{
     width: 40vw;
 }
 
-.secondSec{
+.secondSecContainer{
     background-color: #D4EDFF;
+    display: flex;
+    flex-direction: column;
+}
+
+.secondSec{
     display: flex;
     justify-content: space-evenly;
 }
@@ -101,7 +111,6 @@ main img{
     margin-top: 5vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 
@@ -110,17 +119,191 @@ main img{
     align-items: center;
 }
 
-.secondSec .secondSecNumb h1{
+.secondSec .secondSecNumb h3{
     font-family: "Roboto", sans-serif;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 500;
+    text-align: center;
 }
 
 .secondSec .secondSecNumb img{
-    width: 70px;
+    width: 6.5vw;
     margin-right: 10px;
 }
 
 .secondSec .secondSecImg img{
-    width: 250px;
+    width: 18vw;
+}
+
+.secondSec .secondSecIco{
+    display: flex;
+    align-items: center;
+}
+
+.secondSec .secondSecIco img{
+    width: 80px;
+    padding-top: 30px;
+}
+
+.secondSecContainer .secondSecCta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.secondSecContainer .secondSecCta h2{
+    font-size: 2.5rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    margin-bottom: 5vh;
+}
+
+.featuresContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 8vh;
+}
+
+.featuresContainer .featuresCards{
+    display: flex;
+}
+
+.featuresContainer .featuresCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgb(147, 147, 147) 2px 2px 12px;
+    border-radius: 15px;
+    padding: 3vw;
+    margin: 3vw;
+    text-align: center;
+}
+
+.featuresContainer .featuresCard img{
+    width: 8vw;
+}
+
+.featuresContainer .featuresCard h3{
+    font-size: 1.8rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    margin: 3vh 0;
+}
+
+.featuresContainer .featuresCard p{
+    font-size: 1.1rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    color: rgb(101, 101, 101);
+}
+
+.about{
+    display: flex;
+    align-items: center;
+    margin: 0 5vw;
+}
+
+.about .aboutContent{
+    flex: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+}
+
+.about .aboutImg{
+    flex: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about .aboutImg img{
+    width: 40vw;
+}
+
+.about .aboutContent p{
+    font-family: "Roboto", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-top: 8vh;
+    margin-right: 2vw;
+    color: rgb(101, 101, 101);
+}
+
+.about .aboutContent button{
+    font-size: 1.3rem;
+    width: fit-content;
+    margin-top: 5vh;
+}
+
+.contact{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.contact .contactContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: rgb(147, 147, 147) 2px 2px 12px;
+    padding: 2.8vw;
+    border-radius: 15px;
+    width: 45%;
+    background-color: white;
+}
+
+.contact .contactForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin-top: 5vh;
+}
+
+.contact .contactForm input, textarea{
+    margin: 10px 0px;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    outline: 3px solid black;
+    width: 100%;
+    transition: .2s;
+}
+
+.contact .contactForm input:focus, textarea:focus{
+    outline: 3px solid #5FACF1;
+}
+
+.contact .contactContent h3{
+    font-family: "Roboto", sans-serif;
+    font-size: 2.5rem;
+}
+
+.contact .contactForm textarea{
+    height: 160px;
+    resize: none;
+}
+
+.contact .contactForm button{
+    margin-top: 3vh;
+    width: 70%;
+}
+
+.contact .contactImg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact .contactImg img{
+    width: 40vw;
 }
