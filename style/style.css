@@ -307,3 +307,25 @@ main img{
 .contact .contactImg img{
     width: 40vw;
 }
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #D4EDFF;
+    margin-top: 15vh;
+    padding: 0 20vh;
+}
+
+footer img{
+    width: 10vw;
+}
+
+.upBtn ion-icon{
+    font-size: 5vw;
+    background-color: #5FACF1;
+    border-radius: 50%;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+}
