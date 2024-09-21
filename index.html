@@ -106,12 +106,12 @@
         </div>
         <div class="contactContent">
             <h3>Envie uma mensagem</h3>
-            <form class="contactForm">
+            <form class="contactForm" id="contactForm">
                 <input type="text" placeholder="Nome:" id="nome" name="nome" required>
-                    <input type="email" placeholder="E-mail:" id="email" name="email" required>
-                    <input type="tel" placeholder="Telefone:" id="tel" name="tel">
-                    <textarea placeholder="Mensagem:" id="mensagem" name="mensagem"></textarea>
-                    <button type="submit">Enviar</button>
+                <input type="email" placeholder="E-mail:" id="email" name="email" required>
+                <input type="tel" placeholder="Telefone:" id="tel" name="tel">
+                <textarea placeholder="Mensagem:" id="mensagem" name="mensagem"></textarea>
+                <button type="submit">Enviar</button>
             </form>
         </div>
     </section>
@@ -124,5 +124,8 @@
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script src="script/formHandler.js"></script>
+    <script src="script/index.js"></script>
 </body>
 </html>
